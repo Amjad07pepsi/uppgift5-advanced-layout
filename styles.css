@@ -1,0 +1,116 @@
+/*https://coolors.co/1c2321-7d98a1-5e6572-a9b4c2-eef1ef*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+body{
+   
+    font-family: "Kdam Thmor Pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    background-color: #A9B4C2;
+    margin: 0 auto;
+   width: 80vw;
+   max-width: 1200px;
+}
+
+header{
+    background-color: #7D98A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+p{
+    color: rgb(1, 1, 8);
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-weight: normal;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #EEF1EF;
+    background-color: #5E6572;
+    border-radius: 20px;
+    padding: 5px 10px; 
+    text-align: center;
+}
+
+header nav a:hover{
+    color: black;
+    background-color: #A9B4C2;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+footer{
+    background-color: #7D98A1;
+    color: #EEF1EF;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (min-width:600px){
+    /*Detta händer om vilkor är sant*/
+    body{
+        background-color: gainsboro;
+    }
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        gap: 70px;
+        margin: 0 30px;
+    }
+}
+
+
+/*Form*/
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.send-buttom-container{
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    padding-bottom: 7px;
+}
+
+
+
+@media (min-width:600px) {
+    form{
+        grid-template-columns: 1fr 1fr;
+    }
+    .send-buttom-container{
+        grid-column: span 2;
+    }
+}
